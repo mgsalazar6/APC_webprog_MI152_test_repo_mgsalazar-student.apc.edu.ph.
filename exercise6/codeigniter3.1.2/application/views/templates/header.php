@@ -4,7 +4,9 @@
 body {
     background-image: url("../picOne.jpg");
     background-repeat: no-repeat;
+	font
 }
+
 </style>
         </head>
         
@@ -15,4 +17,4 @@ body {
         <body>
  
                 <h1>User's Database</h1>
-                <p><a href="<?php echo site_url('user'); ?>">HOME</a> | <a href="<?php echo site_url('user/create'); ?>">ADD DATA</a></p>
+                <p><a href="<?php echo site_url('user'); ?>">Home</a> | <a href="<?php echo site_url('user/create'); ?>">Add information</a></p>
