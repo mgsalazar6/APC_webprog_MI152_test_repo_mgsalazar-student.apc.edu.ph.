@@ -6,12 +6,8 @@
 <?php echo form_open('user/edit/'.$user_item['id']); ?>
     <table>
         <tr>
-            <td><label for="name">First Name</label></td>
-            <td><input type="input" name="firstname" size="50" value="<?php echo $user_item['name'] ?>" /></td>
-        </tr>
-        <tr>
-            <td><label for="lastname">Last Name</label></td>
-            <td><input type="input" name="lastname" size="50" value="<?php echo $user_item['lastname'] ?>" /></td>
+            <td><label for="name">Name</label></td>
+            <td><input type="input" name="name" size="50" value="<?php echo $user_item['name'] ?>" /></td>
 		</tr>
         <tr>
             <td><label for="nickname">Nickname</label></td>
