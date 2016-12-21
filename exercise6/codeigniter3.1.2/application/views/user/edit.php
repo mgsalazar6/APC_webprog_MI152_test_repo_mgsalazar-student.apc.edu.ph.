@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<?=base_url()?>css/style.css"/>
-<h2><?php echo $firstname; ?></h2>
+<h2><?php echo $name; ?></h2>
  
 <?php echo validation_errors(); ?>
  
