@@ -169,7 +169,6 @@ echo "<br>";
 echo $cellphone;
 ?>
 </div>
-
 </body>
 </html>	
 
