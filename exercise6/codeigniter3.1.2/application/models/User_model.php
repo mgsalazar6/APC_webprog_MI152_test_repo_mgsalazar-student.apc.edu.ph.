@@ -34,18 +34,17 @@ class User_model extends CI_Model {
     {
         $this->load->helper('url');
  
-        $slug = url_title($this->input->post('firstname'), 'dash', TRUE);
+        $slug = url_title($this->input->post('name'), 'dash', TRUE);
  
         $data = array(
-            'firstname' => $this->input->post('firstname'),
+            'name' => $this->input->post('name'),
             'slug' => $slug,
-            'lastname' => $this->input->post('lastname'),
-            'midname' => $this->input->post('midname'),
             'nickname' => $this->input->post('nickname'),
             'email' => $this->input->post('email'),
-            'homeadd' => $this->input->post('homeadd'),
+            'address' => $this->input->post('address'),
             'gender' => $this->input->post('gender'),
-            'comment' => $this->input->post('comment')
+            'comment' => $this->input->post('comment'),
+			'cellphone' => $this->input->post('cellphone'),
 
         );
         
