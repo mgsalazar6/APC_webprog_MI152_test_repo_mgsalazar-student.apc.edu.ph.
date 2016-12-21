@@ -3,26 +3,24 @@
  
 <table border='5' cellpadding='4'>
     <tr>
-        <td><strong>First Name</strong></td>
-        <td><strong>Last Name</strong></td>
-        <td><strong>Middle Name</strong></td>
+        <td><strong>Name</strong></td>
         <td><strong>Nickname</strong></td>
-        <td><strong>Email Address</strong></td>
-        <td><strong>Home Address</strong></td>
+        <td><strong>Email</strong></td>
+        <td><strong>Address</strong></td>
         <td><strong>Gender</strong></td>
         <td><strong>Comment</strong></td>
-        <td><strong>Action</strong></td>
+		<td><strong>phone</strong></td>
+		
     </tr>
 <?php foreach ($user as $user_item): ?>
         <tr>
-            <td><?php echo $user_item['firstname']; ?></td>
-            <td><?php echo $user_item['lastname']; ?></td>
-             <td><?php echo $user_item['midname']; ?></td>
+            <td><?php echo $user_item['name']; ?></td>
               <td><?php echo $user_item['nickname']; ?></td>
                <td><?php echo $user_item['email']; ?></td>
-                <td><?php echo $user_item['homeadd']; ?></td>
+                <td><?php echo $user_item['address']; ?></td>
                  <td><?php echo $user_item['gender']; ?></td>
                   <td><?php echo $user_item['comment']; ?></td>
+				   <td><?php echo $user_item['cellphone']; ?></td>
             <td>
                 <a href="<?php echo site_url('user/'.$user_item['slug']); ?>">View</a> |
                 <a href="<?php echo site_url('user/edit/'.$user_item['id']); ?>">Edit</a> |
@@ -36,7 +34,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mau's PAGE</title>
+    <title>Informations</title>
 
     <style> 
 body {margin:0;}
@@ -169,165 +167,4 @@ a:hover{
 
   
 
-  <body>
-
-    <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      
-    </ul>
-           <div class="container">
-            <img src="" alt="" height="320">
-            <div class="center">
-                <h3><em>I am <strong>fearfully wonderfully</strong> made...</em></h3>
-            </div>
-
-      
-
-            <h1>CHANTAL SALDIVAR</h1>
-
-            <p>Hello! Hi! Im Chantal Saldivar but you can call me chanty as well.Im an <stong>APCIAN</strong> student and Im welcoming myself to the website world.<br>I hope html will not be so hard to me,patience is a must! Im so exoited about learning more whoooooooooooooooooooooooooooooooo! :)</p>
-
-            <br>
-
-            <br>
-
-            <h1>Hobbies</h1>
-
-            <p>I can say that I have many hobbies in life.Lets start naming it one by one when it comes to sports I love playing basketball and table tennis.</br>When Im at home spending my spare time, Usually I watch movies,read some inspirational<br>
-            quotes and study lectures at day time.At night I kept on browsing facebook till dawn. </p>
-
-            <br>
-
-            <br>
-
-
-            <h1>Interest</h1>
-
-            <p>Learning new things every single day is a great please of mine. Discovering myself and own passion is still on the process so as of now Im still<br> finding myself.I kept asking myself on what field should I focus,what path should I take,am I on the right track.Questions are everywhere but if<br> you'll ask me what I want for now, I would say learning <b>HTML, CSS, PHP, JAVA SCRIPT, PYTHON, and PHOTOSHOP</b> are all in my list.<br>Eager to learn them profesionally with ample time</p>
-
-            <br>
-
-            <br>
-
-            <h1>Favorite websites</h1>
-
-            <p>There are many different websites that can be accessed using internet. Learning and making it is really my goal. Also, I can generate ideas in my favorite<br> and most visited websites such as <a href="http://facebook.com/">facebook, </a><a href="http://9gag.com/">9gag, </a><a href="http://twitter.com/">twitter, </a><a href="http://W3schools.com/">W3schools, </a><a href="http://moodle2.apc.edu.ph/">moodle, </a>and <a href="http://youtube.com/">youtube</a>  </p>
-
-            <br>
-
-            <br>
-
-            <br>
-
-
-            <h1>Summary table (Hobbies,Interest,Favorite Websites)</h1>
-
-            <p><a href="Summary Table.html">Click me for the summary </a></p>
-
-            <br>
-            <br>
-
-
-        
-            <h1>Did you know? (Trivia) </h1>
-
-
-                <div class="center">
-                <p>What scares me the most ?</p>
-
-                </div>
-
-                <p id="insect" style="display:none"><strong>Centipede</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insect').style.display='block'">Find out</button><p>
-
-
-                 <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                 <br>
-              
-               <h1>Did you know? (Trivia) </h1>
-    
-                  <div class="center">
-                <p>My ultimate crush is no other than ?</p>
-
-                </div>
-
-                <p id="insects" style="display:none"><strong>Shailene Woodley</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insects').style.display='block'">Find out</button><p>
-
-
-                       <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                 <br>
-
-                  <h1>Did you know? (Trivia) </h1>
-
-
-                  <div class="center">
-                <p>How many hours do I play basketball when I have a spare time ?</p>
-
-                </div>
-
-                <p id="insectss" style="display:none"><strong>more or less 1 hr</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insectss').style.display='block'">Find out</button><p>
-
-                     <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                 <br>
-
-
-                  <h1>Did you know? (Trivia) </h1>
-
-
-                  <div class="center">
-                <p>In what field am I willing to excel ?</p>
-
-                </div>
-
-                <p id="insectsss" style="display:none"><strong>Web programming</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insectsss').style.display='block'">Find out</button><p>
-
-
-                     <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                 <br>
-
-
-                   <h1>Did you know? (Trivia) </h1>
-
-
-                  <div class="center">
-                <p>Whats my favorite motto ? </p>
-
-                </div>
-
-                <p id="insectssss" style="display:none"><strong> Well done is better than well said </strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insectssss').style.display='block'">Find out</button><p>
-
-    
-                   
-
-
-    <body>
   </html>
