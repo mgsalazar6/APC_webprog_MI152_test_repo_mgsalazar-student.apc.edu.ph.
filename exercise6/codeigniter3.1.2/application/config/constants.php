@@ -18,7 +18,7 @@ defined('FOPEN_READ_WRITE_CREATE_DESTRUCTIVE')  OR define('FOPEN_READ_WRITE_CREA
 defined('FOPEN_WRITE_CREATE')                   OR define('FOPEN_WRITE_CREATE', 'ab');
 defined('FOPEN_READ_WRITE_CREATE')              OR define('FOPEN_READ_WRITE_CREATE', 'a+b');
 defined('FOPEN_WRITE_CREATE_STRICT')            OR define('FOPEN_WRITE_CREATE_STRICT', 'xb');
-defined('FOPEN_READ_WRITE_CREATE_STRICT')       OR define('FOPEN_READ_WRITE_CREATE_STRICT', 'x+b');*/
+defined('FOPEN_READ_WRITE_CREATE_STRICT')       OR define('FOPEN_READ_WRITE_CREATE_STRICT', 'x+b');
 defined('EXIT_SUCCESS')        OR define('EXIT_SUCCESS', 0); // no errors
 defined('EXIT_ERROR')          OR define('EXIT_ERROR', 1); // generic error
 defined('EXIT_CONFIG')         OR define('EXIT_CONFIG', 3); // configuration error
