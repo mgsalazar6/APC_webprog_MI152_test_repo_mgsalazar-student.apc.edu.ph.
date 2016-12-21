@@ -1,0 +1,110 @@
+<html> 
+<body background = "potato.jpg">
+<title> Mypage </title>
+<h1><center><font size="10" color="Purple" face ="Comic Sans MS"> Mau's Homepage</h1></font>
+<center>
+<img src="tropang g2.jpg" alt="Picture1" width="500" height="500" border="4" style="center">
+<style>
+	.dropbtn {
+		background-color: violet;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	}
+
+		.dropbtn:hover, .dropbtn:focus {
+			background-color:pink;
+		}
+
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+				.dropdown-content {
+					display: none;
+					position: relative;
+					background-color: green;
+					min-width: 160px;
+					overflow: auto;
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				}
+
+					.dropdown-content a {
+						color: white;
+						padding: 12px 16px;
+						text-decoration: none;
+						display: block;
+						}
+
+							.dropdown a:hover {
+								background-color: orange
+								}
+
+									.show {
+										display:block;
+									}
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Home</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Mypage.html">Home</a>
+    <a href="Interest.html">Interest</a>
+    <a href="phhhhhp.php">Contact</a>
+  </div>
+</div>
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<style>
+	table{
+		background-color:pink;
+		border-color:green;
+		font-style:italic;
+	}
+	#n, #f, #h, #i,#e{
+		color:blue;
+		font-style: normal;
+		font-size:20;
+	}
+	#m, #m2, #hh,#hhh,#hhhh, #ii,#iii{
+		color:black;
+		font-style:normal;
+		font-size:20;
+	}
+	
+</style>
+</center> 
+
+
+
+
+</hmtl>
+</body>
