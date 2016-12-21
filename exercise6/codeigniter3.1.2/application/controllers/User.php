@@ -11,7 +11,7 @@ class User extends CI_Controller {
     public function index()
     {
         $data['user'] = $this->user_model->get_user();
-        $data['firstname'] = 'User Table';
+        $data['name'] = 'User Table';
  
         $this->load->view('templates/header', $data);
         $this->load->view('user/index', $data);
@@ -103,7 +103,7 @@ class User extends CI_Controller {
         else
         {
             $this->user_model->set_user($id);
-            //$this->load->view('news/success');
+            
             redirect( base_url() . 'index.php/user');
         }
     }
