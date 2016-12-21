@@ -90,7 +90,7 @@ class User extends CI_Controller {
         $this->form_validation->set_rules('address', 'Address', 'required');
         $this->form_validation->set_rules('gender', 'Gender', 'required');
         $this->form_validation->set_rules('comment', 'Comment', 'required');
-		$this->form_validation->set_rules('cellphone', 'Cellphone, 'required');
+		$this->form_validation->set_rules('cellphone', 'Cellphone', 'required');
 
  
         if ($this->form_validation->run() === FALSE)
