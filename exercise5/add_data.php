@@ -140,7 +140,7 @@ function test_input($data) {
 	Cellphone Number: <input type="text" name="cellphone" value="<?php echo $cellphone;?>">
 	<span class="error">*<?php echo $cellphoneErr;?></span>
 	</br>
-	Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+	Comment: <textarea name="comment" rows="8" cols="40"><?php echo $comment;?></textarea>
 	</br>
    <input type="submit" name="btn-save"></button>
 
