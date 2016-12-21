@@ -27,7 +27,7 @@ class User extends CI_Controller {
             show_404();
         }
  
-        $data['firstname'] = $data['user_item']['firstname'];
+        $data['name'] = $data['user_item']['name'];
  
         $this->load->view('templates/header', $data);
         $this->load->view('user/view', $data);
@@ -39,7 +39,7 @@ class User extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
  
-        $data['firstname'] = 'Sign Up';
+        $data['name'] = 'Sign Up';
               
 
         $this->form_validation->set_rules('name', 'Name', 'required');
