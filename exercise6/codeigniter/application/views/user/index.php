@@ -185,16 +185,16 @@ a:hover{
 
             <h1>MA AURORA SALAZAR</h1>
 
-            <p>Hi! I'm Ma Aurora Salazar but you can call me Mau as well.I am a sutdent in <stong>APC</strong> student and Im welcoming myself to the website world.<br>I hope html will not be so hard to me,patience is a must! Im so exoited about learning more whoooooooooooooooooooooooooooooooo! :)</p>
-
+            <p>I'm Ma Aurora Salazar but you can call me Mau as well.I am a student in <stong>APC</strong> 
+			I am 20 years old. but some say i looked 17 LOL! i am born on the 6th of December 1996. 
+			My zodiac sign is sagittarius</p>
             <br>
-
             <br>
-
             <h1>Hobbies</h1>
 
-            <p>I can say that I have many hobbies in life.Lets start naming it one by one when it comes to sports I love playing basketball and table tennis.</br>When Im at home spending my spare time, Usually I watch movies,read some inspirational<br>
-            quotes and study lectures at day time.At night I kept on browsing facebook till dawn. </p>
+            <p>Ive got plenty of hobbies. One of them is Playing Dota 2 with my friends (its such a good game tho. I recommend you that game lol) 
+			the other one is reading wattpad stories, its like im the one who is directing the scene or making the movie inside my head or how should the scenario goes. And mostly my favorite hobby is
+			singing. when im sad i sing. when im happy i sing and it also relieves my stress</p>
 
             <br>
 
@@ -203,24 +203,13 @@ a:hover{
 
             <h1>Interest</h1>
 
-            <p>Learning new things every single day is a great please of mine. Discovering myself and own passion is still on the process so as of now Im still<br> finding myself.I kept asking myself on what field should I focus,what path should I take,am I on the right track.Questions are everywhere but if<br> you'll ask me what I want for now, I would say learning <b>HTML, CSS, PHP, JAVA SCRIPT, PYTHON, and PHOTOSHOP</b> are all in my list.<br>Eager to learn them profesionally with ample time</p>
+            <p>I am interested in making friends. I love them so much. I treasure that I want to bury them in the ground joke! xD tho i am an introvert
+			i am interested in animes, dota, learning new things. i am interseted in hanging out with my friends because i love them so much <3 even though they are harsh and bullies.
+			</p>
 
             <br>
 
             <br>
-
-            <h1>Favorite websites</h1>
-
-            <p>There are many different websites that can be accessed using internet. Learning and making it is really my goal. Also, I can generate ideas in my favorite<br> and most visited websites such as <a href="http://facebook.com/">facebook, </a><a href="http://9gag.com/">9gag, </a><a href="http://twitter.com/">twitter, </a><a href="http://W3schools.com/">W3schools, </a><a href="http://moodle2.apc.edu.ph/">moodle, </a>and <a href="http://youtube.com/">youtube</a>  </p>
-
-            <br>
-
-            <br>
-
-            <br>
-
-
-            <h1>Summary table (Hobbies,Interest,Favorite Websites)</h1>
 
             <p><a href="Summary Table.html">Click me for the summary </a></p>
 
@@ -237,7 +226,7 @@ a:hover{
 
                 </div>
 
-                <p id="insect" style="display:none"><strong>Centipede</strong></p>
+                <p id="insect" style="display:none"><strong>I am scared of blood because back when i was little girl i got traumatize</strong></p>
 
                 <p><button type="button" onclick="document.getElementById('insect').style.display='block'">Find out</button><p>
 
@@ -253,11 +242,11 @@ a:hover{
                <h1>Did you know? (Trivia) </h1>
     
                   <div class="center">
-                <p>My ultimate crush is no other than ?</p>
+                <p>what do you usually do when you have freetime?</p>
 
                 </div>
 
-                <p id="insects" style="display:none"><strong>YOGESH!</strong></p>
+                <p id="insects" style="display:none"><strong>I usually play Dota 2 with my friends and i usually watch movies especially horror movies </strong></p>
 
                 <p><button type="button" onclick="document.getElementById('insects').style.display='block'">Find out</button><p>
 
@@ -274,11 +263,11 @@ a:hover{
 
 
                   <div class="center">
-                <p>How many hours do I play basketball when I have a spare time ?</p>
+                <p>one thing about yourself that makes you unique?</p>
 
                 </div>
 
-                <p id="insectss" style="display:none"><strong>more or less 1 hr</strong></p>
+                <p id="insectss" style="display:none"><strong>I like cute things and whether i see cute animals i want to pet them</strong></p>
 
                 <p><button type="button" onclick="document.getElementById('insectss').style.display='block'">Find out</button><p>
 
@@ -288,22 +277,6 @@ a:hover{
                  <br>
                  <br>
                 <br>
-                 <br>
-
-
-                  <h1>Did you know? (Trivia) </h1>
-
-
-                  <div class="center">
-                <p>In what field am I willing to excel ?</p>
-
-                </div>
-
-                <p id="insectsss" style="display:none"><strong>Web programming</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insectsss').style.display='block'">Find out</button><p>
-
-
                      <br>
                  <br>
                   <br>
@@ -321,7 +294,7 @@ a:hover{
 
                 </div>
 
-                <p id="insectssss" style="display:none"><strong>Chalalalalalalalalal </strong></p>
+                <p id="insectssss" style="display:none"><strong>once it is broken, you cannot fix it back</strong></p>
 
                 <p><button type="button" onclick="document.getElementById('insectssss').style.display='block'">Find out</button><p>
 
