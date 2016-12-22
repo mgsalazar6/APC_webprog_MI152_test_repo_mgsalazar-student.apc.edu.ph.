@@ -46,7 +46,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #000;
     position: fixed;
     top: 0;
     width: 100%;
@@ -95,7 +95,7 @@ img {
 h1 {
     text-align: center;
     text-transform: capitalize;
-    color: #DC143C;
+    color: blue;
     
 }
 
