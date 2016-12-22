@@ -211,11 +211,6 @@ a:hover{
 
             <br>
 
-            <p><a href="Summary Table.html">Click me for the summary </a></p>
-
-            <br>
-            <br>
-
 
         
             <h1>Did you know? (Trivia) </h1>
