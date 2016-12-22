@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$config['base_url'] = '';
+$config['base_url'] = 'http://127.0.0.1/exercise6/codeigniter3.1.2/';
 
 
 $config['index_page'] = 'index.php';
