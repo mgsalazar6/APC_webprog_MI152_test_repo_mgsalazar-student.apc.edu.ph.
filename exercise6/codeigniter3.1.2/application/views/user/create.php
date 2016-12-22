@@ -11,11 +11,11 @@
 <?php echo form_open('user/create'); ?>    
     <table>
         <tr>
-            <td><label for="name">First Name</label></td>
+            <td><label for="name">Name</label></td>
             <td><input type="input" name="name" size="50" /></td>
         </tr>
         <tr>
-            <td><label for="nickname">Nick Name</label></td>
+            <td><label for="nickname">NickName</label></td>
             <td><input type="input" name="nickname" size="50" /></td>
         </tr>
         <tr>
