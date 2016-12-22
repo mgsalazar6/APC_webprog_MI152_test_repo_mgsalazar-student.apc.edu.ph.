@@ -2,7 +2,7 @@
         <head>
                <style>
 body {
-    background-image: url("../cityci.png");
+    background-color: #EE82EE;
     background-repeat: no-repeat;
 }
 </style>

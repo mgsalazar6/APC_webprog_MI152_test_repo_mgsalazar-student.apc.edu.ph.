@@ -3,14 +3,14 @@
  
 <table border='5' cellpadding='4'>
     <tr>
-        <td><strong>FIRST NAME</strong></td>
-        <td><strong>LAST NAME</strong></td>
-        <td><strong>MIDDLE NAME</strong></td>
-        <td><strong>NICK NAME</strong></td>
-        <td><strong>EMAIL ADDRESS</strong></td>
-        <td><strong>HOME ADDRESS</strong></td>
-        <td><strong>GENDER</strong></td>
-        <td><strong>COMMENT</strong></td>
+        <td><strong>First Name</strong></td>
+        <td><strong>Last Name</strong></td>
+        <td><strong>Middle Initial</strong></td>
+        <td><strong>Nickname</strong></td>
+        <td><strong>Email</strong></td>
+        <td><strong>Address</strong></td>
+        <td><strong>Gender</strong></td>
+        <td><strong>Comment</strong></td>
         <td><strong>Action</strong></td>
     </tr>
 <?php foreach ($user as $user_item): ?>
@@ -206,96 +206,5 @@ a:hover{
             <p>I am interested in making friends. I love them so much. I treasure that I want to bury them in the ground joke! xD tho i am an introvert
 			i am interested in animes, dota, learning new things. i am interseted in hanging out with my friends because i love them so much <3 even though they are harsh and bullies.
 			</p>
-
-            <br>
-
-            <br>
-
-
-        
-            <h1>Did you know? (Trivia) </h1>
-
-
-                <div class="center">
-                <p>What scares me the most ?</p>
-
-                </div>
-
-                <p id="insect" style="display:none"><strong>I am scared of blood because back when i was little girl i got traumatize</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insect').style.display='block'">Find out</button><p>
-
-
-                 <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                 <br>
-              
-               <h1>Did you know? (Trivia) </h1>
-    
-                  <div class="center">
-                <p>what do you usually do when you have freetime?</p>
-
-                </div>
-
-                <p id="insects" style="display:none"><strong>I usually play Dota 2 with my friends and i usually watch movies especially horror movies </strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insects').style.display='block'">Find out</button><p>
-
-
-                       <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                 <br>
-
-                  <h1>Did you know? (Trivia) </h1>
-
-
-                  <div class="center">
-                <p>one thing about yourself that makes you unique?</p>
-
-                </div>
-
-                <p id="insectss" style="display:none"><strong>I like cute things and whether i see cute animals i want to pet them</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insectss').style.display='block'">Find out</button><p>
-
-                     <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                     <br>
-                 <br>
-                  <br>
-                 <br>
-                 <br>
-                <br>
-                 <br>
-
-
-                   <h1>Did you know? (Trivia) </h1>
-
-
-                  <div class="center">
-                <p>Whats my favorite motto ? </p>
-
-                </div>
-
-                <p id="insectssss" style="display:none"><strong>once it is broken, you cannot fix it back</strong></p>
-
-                <p><button type="button" onclick="document.getElementById('insectssss').style.display='block'">Find out</button><p>
-
-    
-                   
-
-
     <body>
   </html>
