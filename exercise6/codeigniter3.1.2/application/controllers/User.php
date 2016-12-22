@@ -11,7 +11,7 @@ class User extends CI_Controller {
     public function index()
     {
         $data['user'] = $this->user_model->get_user();
-        $data['name'] = 'User Table';
+        $data['firstname'] = 'User Table';
  
         $this->load->view('templates/header', $data);
         $this->load->view('user/index', $data);
@@ -27,7 +27,7 @@ class User extends CI_Controller {
             show_404();
         }
  
-        $data['name'] = $data['user_item']['name'];
+        $data['firstname'] = $data['user_item']['firstname'];
  
         $this->load->view('templates/header', $data);
         $this->load->view('user/view', $data);
@@ -39,16 +39,20 @@ class User extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
  
-        $data['name'] = 'Sign Up';
-              
+        $data['firstname'] = 'Sign Up';
+                /*
+        $this->form_validation->set_rules('title', 'Title', 'required');
+        $this->form_validation->set_rules('text', 'Text', 'required');
+                    */
 
-        $this->form_validation->set_rules('name', 'Name', 'required');
+        $this->form_validation->set_rules('firstname', 'Firstname', 'required');
+        $this->form_validation->set_rules('lastname', 'Lastname', 'required');
+        $this->form_validation->set_rules('midname', 'Midname', 'required');
         $this->form_validation->set_rules('nickname', 'Nickname', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required');
-        $this->form_validation->set_rules('address', 'Address', 'required');
+        $this->form_validation->set_rules('homeadd', 'Homeadd', 'required');
         $this->form_validation->set_rules('gender', 'Gender', 'required');
         $this->form_validation->set_rules('comment', 'Comment', 'required');
-		$this->form_validation->set_rules('cellphone', 'Cellphone', 'required');
        
 
 
@@ -81,16 +85,17 @@ class User extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         
-        $data['name'] = 'Edit a news item';        
+        $data['firstname'] = 'Edit a news item';        
         $data['user_item'] = $this->user_model->get_user_by_id($id);
         
-        $this->form_validation->set_rules('name', 'Name', 'required');
+        $this->form_validation->set_rules('firstname', 'Firstname', 'required');
+        $this->form_validation->set_rules('lastname', 'Lastname', 'required');
+        $this->form_validation->set_rules('midname', 'Midname', 'required');
         $this->form_validation->set_rules('nickname', 'Nickname', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required');
-        $this->form_validation->set_rules('address', 'Address', 'required');
+        $this->form_validation->set_rules('homeadd', 'Homeadd', 'required');
         $this->form_validation->set_rules('gender', 'Gender', 'required');
         $this->form_validation->set_rules('comment', 'Comment', 'required');
-		$this->form_validation->set_rules('cellphone', 'Cellphone', 'required');
 
  
         if ($this->form_validation->run() === FALSE)
@@ -103,7 +108,7 @@ class User extends CI_Controller {
         else
         {
             $this->user_model->set_user($id);
-            
+            //$this->load->view('news/success');
             redirect( base_url() . 'index.php/user');
         }
     }
