@@ -36,7 +36,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LOVE</title>
+    <title>MOTIVATION</title>
 
     <style> 
 body {margin:0;}
