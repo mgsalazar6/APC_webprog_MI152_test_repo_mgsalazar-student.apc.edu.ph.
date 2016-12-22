@@ -81,7 +81,7 @@ class User extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         
-        $data['firstname'] = 'Edit a news item';        
+        $data['name'] = 'Edit a news item';        
         $data['user_item'] = $this->user_model->get_user_by_id($id);
         
         $this->form_validation->set_rules('name', 'Name', 'required');

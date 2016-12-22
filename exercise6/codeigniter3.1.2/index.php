@@ -107,12 +107,12 @@ switch (ENVIRONMENT)
 	{
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
 		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
+		exit(3); 
 	}
 
 	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
 
-	// The path to the "views" directory
+
 	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
 	{
 		$view_folder = APPPATH.'views';
@@ -144,7 +144,7 @@ switch (ENVIRONMENT)
 	{
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
 		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
-		exit(3); // EXIT_CONFIG
+		exit(3); 
 	}
 
 	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
