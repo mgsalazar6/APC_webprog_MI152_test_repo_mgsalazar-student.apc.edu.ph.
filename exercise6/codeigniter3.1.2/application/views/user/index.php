@@ -9,7 +9,7 @@
         <td><strong>Address</strong></td>
         <td><strong>Gender</strong></td>
         <td><strong>Comment</strong></td>
-		<td><strong>phone</strong></td>
+		<td><strong>Cellphone</strong></td>
 		
     </tr>
 <?php foreach ($user as $user_item): ?>
