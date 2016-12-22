@@ -95,7 +95,7 @@ img {
 h1 {
     text-align: center;
     text-transform: capitalize;
-    color: blue;
+    color: #800080;
     
 }
 
