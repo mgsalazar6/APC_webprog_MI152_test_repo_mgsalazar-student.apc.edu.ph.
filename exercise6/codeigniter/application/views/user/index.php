@@ -3,9 +3,9 @@
  
 <table border='5' cellpadding='4'>
     <tr>
-        <td><strong>First Name</strong></td>
-        <td><strong>Last Name</strong></td>
-        <td><strong>Middle Initial</strong></td>
+        <td><strong>Firstname</strong></td>
+        <td><strong>Lastname</strong></td>
+        <td><strong>Middle initial</strong></td>
         <td><strong>Nickname</strong></td>
         <td><strong>Email</strong></td>
         <td><strong>Address</strong></td>
@@ -183,7 +183,7 @@ a:hover{
 
       
 
-            <h1>MA AURORA SALAZAR</h1>
+            <h1>Ma Aurora Salazar</h1>
 
             <p>I'm Ma Aurora Salazar but you can call me Mau as well.I am a student in <stong>APC</strong> 
 			I am 20 years old. but some say i looked 17 LOL! i am born on the 6th of December 1996. 

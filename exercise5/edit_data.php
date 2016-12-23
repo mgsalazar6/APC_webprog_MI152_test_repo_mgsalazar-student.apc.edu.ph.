@@ -75,7 +75,7 @@ if(isset($_POST['btn-cancel']))
   Name: <input type="text" name="name">
   <span class="error">*</span>
   <br><br>
-   Nickame: <input type="text" name="nickname">
+   Nickame: <input type="text" name="nickname" value="<?php echo $user_item['firstname'] ?>">
   <span class="error">*</span>
   <br><br>
    Address: <textarea name="address"></textarea>
