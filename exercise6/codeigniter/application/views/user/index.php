@@ -1,11 +1,11 @@
 <h2><?php echo $firstname; ?></h2>
 
  
-<table border='5' cellpadding='4'>
+<table border='6' cellpadding='4'>
     <tr>
         <td><strong>Firstname</strong></td>
         <td><strong>Lastname</strong></td>
-        <td><strong>Middle initial</strong></td>
+        <td><strong>Middle Initial</strong></td>
         <td><strong>Nickname</strong></td>
         <td><strong>Email</strong></td>
         <td><strong>Address</strong></td>
@@ -46,7 +46,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: Black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -178,7 +178,7 @@ a:hover{
            <div class="container">
             <img src="" alt="" height="500">
             <div class="center">
-                <h3>Welcome My Friend</h3>
+                <h3>WELCOME TO MY PAGE</h3>
             </div>
 
       
