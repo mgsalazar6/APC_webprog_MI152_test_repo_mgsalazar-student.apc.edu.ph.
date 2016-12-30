@@ -39,7 +39,10 @@
     <title>MOTIVATION</title>
 
     <style> 
-body {margin:0;}
+body {
+	margin:0;
+    background-image:url("doto.png") ;
+	}
 
 ul {
     list-style-type: none;
