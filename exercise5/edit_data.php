@@ -2,28 +2,33 @@
 include_once 'dbconfig.php';
 if(isset($_GET['edit_id']))
 {
- $sql_query="SELECT * FROM sample WHERE id=".$_GET['edit_id'];
+ $sql_query ="SELECT * FROM sample WHERE id=".$_GET['edit_id'];
  $result_set=mysqli_query($con,$sql_query);
  $fetched_row=mysqli_fetch_array($result_set);
-
 }
 if(isset($_POST['btn-update']))
 {
 
  $name = $_POST['name'];
+ $email = $_POST['email'];
  $nickname = $_POST['nickname'];
  $address = $_POST['address'];
- $email = $_POST['email'];
- $cellphone = $_POST['cellphone'];
  $comment = $_POST['comment'];
  $gender = $_POST['gender'];
-
- $sql_query = "UPDATE sample SET name='$name',nickname='$nickname',address='$address',email='$email',cellphone='$cellphone',comment='$comment',gender='$gender' WHERE id=".$_GET['edit_id'];
-
-	echo $sql_query;
+ $cellphone= $_POST['cellphone'];
+ 
+ 
+ 
+	
+         $sql_query = "UPDATE sample SET name='$name',nickname='$nickname',address='$address',email='$email',comment='$comment',gender='$gender',cellphone='$cellphone' WHERE id=".$_GET['edit_id'];
+    
+	
+     		echo $sql_query;
+			
 
  if(mysqli_query($con,$sql_query))
  {
+
   ?>
   <script type="text/javascript">
   alert('Data Are Updated Successfully');
@@ -39,14 +44,12 @@ if(isset($_POST['btn-update']))
   </script>
   <?php
  }
-
 }
 if(isset($_POST['btn-cancel']))
 {
  header("Location: index.php");
 }
 ?>
-
 <style>
 .error{
 	color: red;
@@ -57,45 +60,57 @@ if(isset($_POST['btn-cancel']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>YAY</title>
+<title>Edit</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body>
-<center>
 
+<center>
 <div id="header">
  <div id="content">
-    <label>Tell me about yourself ^_^</label>
+    <label>Edit your data</label>
     </div>
 </div>
-<div id="content"><td align="center"><a href="index.php"> back to main page</a></td>
-<h2>Information</h2>
-<p><span class="error">* required field.</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name">
-  <span class="error">*</span>
-  <br><br>
-   Nickame: <input type="text" name="nickname" value="<?php echo $user_item['firstname'] ?>">
-  <span class="error">*</span>
-  <br><br>
-   Address: <textarea name="address"></textarea>
-  <span class="error">* </span>
-  <br><br>
-  E-mail: <input type="text" name="email">
-  <span class="error">*</span>
-  <br><br>
-  Number: <input type="text" name="cellphone" >
-  <span class="error">*</span>
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <span class="error">*</span>
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
+
+<div id="body">
+ <div id="content">
+    <center><a href="index.php">back to main page</a></center><br>
+    <form method="post">
+    <table align="center">
+    <tr>
+    <td><input type="text" name="name" placeholder="Complete Name" value="<?php echo $fetched_row['name']; ?>" required /></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="nickname" placeholder="Nickname" value="<?php echo $fetched_row['nickname']; ?>" required /></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="email" placeholder="Email address" value="<?php echo $fetched_row['email']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="address" placeholder="Home address" value="<?php echo $fetched_row['address']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td>
+	<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo $fetched_row['gender']; ?> value="Female">Female
+	<input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo $fetched_row['gender']; ?> value="Male">Male
+	</td>
+    </tr>
+	<tr>
+    <td><input type="number" name="cellphone" placeholder="Cellphone Number" value="<?php echo $fetched_row['cellphone']; ?>" required /></td>
+    </tr>
+	 <td>Comment: <br>
+	 <textarea name="comment" rows="10" cols="144"><?php echo $fetched_row['comment']; ?></textarea>
+	 </td>
+    <tr>
+    <td>
+    <button type="submit" name="btn-update"><strong>UPDATE</strong></button>
+    <button type="submit" name="btn-cancel"><strong>Cancel</strong></button>
+    </td>
+    </tr>
+    </table>
+    </form>
+    </div>
+</div>
+
 </center>
 </body>
 </html>
