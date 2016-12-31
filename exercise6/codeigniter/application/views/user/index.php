@@ -41,7 +41,7 @@
     <style> 
 body {
 	margin:0;
-    background-image:url("doto.png") ;
+    background-image:url("cute.jpg");
 	}
 
 ul {
